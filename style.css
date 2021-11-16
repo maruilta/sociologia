@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --Playfair: 'Playfair Display', serif;
+    --Quicksand: 'Quicksand', sans-serif;
+    --Roboto: 'Roboto', sans-serif;
+    --dark: #3c393d;
+    --exDark: #2b2b2b;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--Quicksand);
+}
+body{
+    line-height: 1.4;
+    color: var(--dark);
+}
+img{
+    width: 100%;
+    display: block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* header */
+header{
+    min-height: 100vh;
+    background: linear-gradient(rgba(225, 224, 224, 0.4), rgba(208, 199, 199, 0.3)), url(images/banner-bg.jpeg) center/cover no-repeat fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1.2rem;
+}
+
+.logo{
+    display: inline-block;
+    max-width: 5rem;
+    margin-left: 3rem;
+}
+.navbar-brand{
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 500;
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    font-family: var(--Roboto);
+    letter-spacing: 2px;
+    padding: 0.4rem 0.1rem;
+    margin-right: 10rem;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+    text-align: center;
+}
+.navbar-nav a{
+    text-transform: uppercase;
+    font-family: var(--Roboto);
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.4rem 0.1rem;
+    letter-spacing: 3px;
+    transition: opacity 0.5s ease;
+}
+.navbar-nav a:hover{
+    opacity: 0.7;
+}
+.banner{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+.banner-title{
+    font-size: 3rem;
+    font-family: var(--Playfair);
+    line-height: 1.2;
+}
+.banner-title span{
+    font-family: var(--Playfair);
+    color: var(--exDark);
+}
+.banner p{
+    padding: 0.5rem 0 0.5rem 0;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    color: #0a0a0a;
+    font-family: var(--Roboto);
+    font-weight: 300;
+    word-spacing: 2px;
+}
+/* about */
+.about{
+    /* background: linear-gradient(rgba(225, 218, 218, 0.4), rgba(172, 168, 168, 0.3)), url(images/covid19-background.jpg) center/cover no-repeat fixed; */
+    padding: 5rem 0;
+}
+.about-text{
+    margin: auto 1rem auto 1rem;
+}
+.about-text p{
+    font-family: (--Playfair);
+    color: #0a0a0a;
+    padding: 0.75rem 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+/* whoweare */
+.whoweare{
+    background: linear-gradient(rgba(255, 234, 234, 0.6), rgba(228, 228, 228, 0.6)), url(images/footer-imagen.png) center/cover no-repeat fixed;
+    padding: 5rem 0;
+}
+.whoweare-text{
+    margin: auto 1rem auto 1rem;
+}
+.whoweare-text p{
+    font-family: (--Playfair);
+    color: #000000;
+    padding: 0.75rem 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+    word-spacing: 2px;
+}
+/* footer */
+footer{
+    background: var(--exDark);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+.footer span{
+    margin-top: 1rem;
+    display: block;
+    font-family: var(--Playfair);
+    letter-spacing: 2px;
+}
+
+/* Media Queries */
+@media screen and (min-width: 540px){
+    .navbar-nav a{
+        padding-right: 1.2rem;
+        padding-left: 1.2rem;
+    }
+    .logo{
+        display: block;
+        max-width: 3rem;
+        margin-left: 1rem;
+    }
+    .banner-title{
+        font-size: 5rem;
+    }
+    .banner form{
+        margin-top: 1.4rem;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .about-text{
+        margin: auto 4rem auto 4rem;
+    }
+    .whoweare-text{
+        margin: auto 4rem auto 4rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .navbar .container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .about-text{
+        margin: auto 4rem auto 4rem;
+    }
+}
